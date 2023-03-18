@@ -17,6 +17,7 @@ public class RestEndpoint {
 
     @RequestMapping("/users")
     public List<Users> getAllUser(){
+
         return myServices.getUsers();
     }
     @RequestMapping(method = RequestMethod.POST, value = "/user/add")
